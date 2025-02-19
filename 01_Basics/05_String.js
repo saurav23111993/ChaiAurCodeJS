@@ -13,3 +13,12 @@ console.log(mName);
 
 console.log(mName[0]);
 console.log(mName.__proto__);
+console.log(mName.toUpperCase());
+console.log(mName.charAt(1));
+
+
+let newString = "Saurav-Tiwari";
+ //urav-
+console.log(newString.substring(2,7));
+
+console.log(newString.slice(-8,6));
