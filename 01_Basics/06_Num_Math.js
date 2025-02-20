@@ -30,6 +30,16 @@ console.log(Math.floor((Math.random()*10)+1));
 
 let min = 1
 let max = 6
-let num12 = ((Math.random()*(max-min+1))+ min)
-console.log(num12);
-console.log(Math.floor(num12));
+let num1223 = ((Math.random()*(max-min+1))+ min)
+console.log(num1223);
+console.log(Math.floor(num1223));
+
+let mydate1234 = new Date();
+console.log(mydate1234.getMonth());
+
+console.log(mydate1234.toLocaleString('default',{
+    month : "long",
+    year : "numeric"
+}));
+
+
