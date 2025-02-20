@@ -21,3 +21,15 @@ console.log(Math.abs(-10));
 console.log(Math.round(4.7));
 console.log(Math.ceil(4.7));
 console.log(Math.floor(4.7));
+
+
+console.log(Math.random()); // Genarates number between 0 < number < 1
+
+console.log(Math.floor((Math.random()*10)+1));
+
+
+let min = 1
+let max = 6
+let num12 = ((Math.random()*(max-min+1))+ min)
+console.log(num12);
+console.log(Math.floor(num12));
