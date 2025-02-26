@@ -40,5 +40,48 @@ const obj2 = {
 // console.log(obj4);
 
 
-const obj3 = {...obj1,...obj2}
-console.log(obj3);
+// const obj3 = {...obj1,...obj2}
+// console.log(obj3);
+
+
+const arr178 = [
+    {
+        Name : "Saurav",
+        Age : 31,
+        email : "saurav@google.com"
+    },
+    {
+        Name : "Saurav",
+        Age : 31,
+        email : "saurav@google.com"
+    },
+    {
+        Name : "Saurav",
+        Age : 31,
+        email : "saurav@google.com"
+    },
+    {
+        Name : "Saurav",
+        Age : 31,
+        email : "saurav@google.com"
+    }
+]
+
+console.log(arr178);
+console.log(Object.keys(arr178[0]));
+console.log(Object.entries(arr178[0]));
+console.log(obj2.hasOwnProperty("3"));
+
+const cours12 = {
+    courseName : "JS  Chai Aur Code",
+    price : "999",
+    courseInstructor : "hitesh",
+    courseRelTaker : {
+        name : "Saurav",
+        age : 31
+    }
+}
+// Object Destructuring
+const {courseName : name12, price, courseInstructor,courseRelTaker} = cours12;
+console.log(name12, price, courseInstructor,courseRelTaker );
+
