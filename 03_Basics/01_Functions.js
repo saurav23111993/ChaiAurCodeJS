@@ -24,3 +24,26 @@ function addAll(a,b, ...num){
 }
 
 addAll(2,3,4,5,6,7,8);
+
+
+const user = {
+    username : "Saurav",
+    price : 199
+}
+
+function handleObject(userObj){
+    console.log(`The username is ${userObj.price}`);
+    
+}
+
+handleObject({
+    username: "Sabarna",
+    price : 300
+})
+
+const newArray12 = [300,333,555,999];
+
+function returnSecondValue(passArr){
+    return passArr[1];
+}
+console.log(returnSecondValue(newArray12));
