@@ -31,8 +31,9 @@ jsUser.name = "Sabarna";
 // Function
 
 jsUser.greeting = function(){
-    console.log("Hello World");
-};
+    //console.log("Hello World");
+    return 1+2;
+}; 
 
 
 jsUser.greetingtwo = function(){
@@ -41,6 +42,8 @@ jsUser.greetingtwo = function(){
 
 
 console.log(jsUser);
-console.log(jsUser.greeting());
+console.log(jsUser.greeting); // Return the function
+console.log(jsUser.greetingtwo); // Return the function
+console.log(jsUser.greeting()); // Executes and return value
 console.log(jsUser.greetingtwo());
 // console.log(jsUser.greeting());
