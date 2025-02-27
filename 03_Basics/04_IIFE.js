@@ -9,7 +9,10 @@
 })(); // Semi Colon is important as it tells the code to end the code
 
 
-( (num1, num2)=>{
+const var1 = ( (num1, num2)=>{
     console.log(`Name is ${num1}`);
+    return num1 + num2;''
     
 } )(2,3);
+
+console.log(var1);
