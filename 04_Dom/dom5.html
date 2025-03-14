@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 5</title>
+</head>
+<body style="background-color: #414141; color: white">
+        <ul class="language">
+            <li>Javascript</li>
+        </ul>
+</body>
+
+<script>
+    // addLang("Python")
+    // function addLang(langName){
+        const lstItem = document.createElement('li')
+        console.log(lstItem);
+
+        const nodeText = document.createTextNode("Python")
+        lstItem.appendChild(nodeText);
+
+        const parentUl = document.querySelector('.language');
+        console.log(parentUl);
+        parentUl.appendChild(lstItem);
+   // }
+</script>
+</html>
