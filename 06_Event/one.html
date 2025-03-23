@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+
+        <h1 class="name" id="nameId"> Saurav Tiwari </h1>
+
+        <ul id="ulid">
+            <li id="li1">Saurav</li>
+            <li id="li2">Tiwari</li>
+            <li><a href="https://www.google.co.uk/" target="_blank">Google</a></li>
+        </ul>
+        
+</body>
+<script>
+    document.querySelector('#nameId').addEventListener('click',(e)=>{
+        console.log(e)
+    },false)
+
+    document.querySelector('#ulid').addEventListener('click',(e)=>{
+        console.log("Parent UL Is clicked",e.target.id);
+        if(e.target.id !== 'ulid'){
+        let removeIt = e.target;
+        removeIt.remove();
+        }
+
+    },false)
+
+    document.querySelector('#li1').addEventListener('click',(e)=>{
+        console.log("Child LI is fixed")
+       // e.stopPropagation()
+    },false)
+
+</script>
+</html>
