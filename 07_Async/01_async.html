@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurav</title>
+</head>
+<body style="background-color: #414141;color: aliceblue;">
+
+    <h1 id="h1Tag">Saurav Tiwari</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+    let print1 ;
+    document.querySelector('#start').addEventListener('click',function(){ 
+        print1 = setInterval(function(){
+            console.log("start Timeout");
+        },1000)
+    })
+
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        console.log("stop Timeout");
+        clearInterval(print1);
+    })
+
+</script>
+</html>
