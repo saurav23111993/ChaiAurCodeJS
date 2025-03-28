@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bind</title>
+</head>
+<body>
+<button>Button Click</button>
+</body>
+
+<script>
+        class react{
+            constructor(){
+                this.server = "https://react.com"
+                this.username ="saurav"
+                document.querySelector('button')
+                .addEventListener('click',this.getUSer.bind(this));
+
+            }
+
+            getUSer(){
+
+                console.log("Button Click");
+                console.log(this);
+                
+                console.log(`${this.server}`);
+                
+            }
+        }
+
+        const app1 = new react()
+</script>
+</html>
